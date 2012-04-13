@@ -5,3 +5,5 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+metals = Metal.create([{name: 'Copper'}, {name: 'Gold 100oz'}, {name: 'Gold'}, {name: 'Palladium'}, {name: 'Platinum'}, {name: 'Silver 5000oz'}, {name: 'Silver'}])

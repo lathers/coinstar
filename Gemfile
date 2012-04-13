@@ -44,3 +44,7 @@ group :development, :test do
   gem 'pry-doc'
   gem 'rspec-rails'
 end
+
+group :test do
+  gem 'ZenTest'
+end
