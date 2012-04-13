@@ -22,6 +22,9 @@ end
 
 gem 'jquery-rails'
 
+# for screen scraping and remote data collection
+gem 'nokogiri'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -36,3 +39,8 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+group :development, :test do
+  gem 'pry'
+  gem 'pry-doc'
+  gem 'rspec-rails'
+end
