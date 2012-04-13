@@ -1,14 +1,86 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
 <head>
-  <title>Coinstar</title>
+  <title>collectorgold.com</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" type="text/css" href="http://numismelt.com/styles/style.css" />
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
+  <div id="main">
+    <div id="header">
+	  <div id="banner">
+	    <h1>numismelt.com / collectorgold.com</h1>
+        <div id="menubar">
+          <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#.html">Gold Page</a></li>
+            <li><a href="#.html">Silver Page</a></li>
+            <li><a href="#.html">Link Page</a></li>
+            <li><a href="#.html">About</a></li>
+          </ul>
+        </div>
+	    <div id="contact">
+	      <img src="images/libv.png" alt="1883 NC Liberty" />
+	      <img src="images/ase.png" alt="2006 ASE Reverse Proof" />
+		  <!--<img src="images/bayb.png" alt="1936 Bay Bridge Commemorative" />-->
+		  <img src="images/morg.png" alt="1879s Morgan" />
+		  
+	    </div>
+	  </div>
+    </div>
 
-<%= yield %>
-
+	<div id="site_content">	
+	  <div class="sidebar_container">
+		<div class="sidebar">
+          <div class="sidebar_item">
+            <h2>post subject</h2>
+			<h4>date posted</h4>
+            <p>i was walking through the park the other day when this hobo tripped me and stole my wallet...</p>
+		  	<div class="button_small">
+		      <a href="#">Read more</a>
+		    </div>
+          </div>
+        </div>
+		<div class="sidebar">
+          <div class="sidebar_item">
+            <h2>post subject</h2>
+			<h4>date posted</h4>
+            <p>eventually i got back to my feet, but i was surrounded by 14 other hobo's...</p>
+		  	<div class="button_small">
+		      <a href="#">Read more</a>
+		    </div>
+          </div>
+        </div>
+		<div class="sidebar">
+          <div class="sidebar_item">
+            <h2>post subject</h2>
+			<h4>date potsed</h4>
+            <p>stupid hobo's.</p>
+		  	<div class="button_small">
+		      <a href="#">Read more</a>
+		    </div>
+          </div>
+        </div>
+       </div>
+      <ul class="slideshow">
+        <li><img width="650" height="300" src="images/logo.jpg" alt="logo" /></li><!--www.pixmac.com/picture/golden+eagle+coins+on+newspaper/000087604202-->
+      </ul>   	 
+	  <div id="content">
+	  	<%= yield %>
+        
+		</div>
+      </div>
+	</div>
+  </div>
+  <div id="footer">
+  	&copy;2012, NumisMelt&trade; name and all content owned by me.
+  </div>
 </body>
 </html>
