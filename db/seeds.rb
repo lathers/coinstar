@@ -26,5 +26,6 @@ require 'pry'
 	Metal.create(:name => metal_name)
 end 
 
+puts "CREATING COINS"
 
 #metals = Metal.create([{name: 'Copper'}, {name: 'Gold 100oz'}, {name: 'Gold'}, {name: 'Palladium'}, {name: 'Platinum'}, {name: 'Silver 5000oz'}, {name: 'Silver'}])
