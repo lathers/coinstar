@@ -3,7 +3,7 @@ class Metal < ActiveRecord::Base
   require 'nokogiri'  
   attr_accessible :name
   validates_presence_of :name
-
+  has_many :coins
 def price
 	current_price = 0
 	@doc = Nokogiri::HTML(open("http://finance.yahoo.com/futures?t=metals"))

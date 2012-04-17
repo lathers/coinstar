@@ -11,6 +11,7 @@ require 'open-uri'
 require 'nokogiri'
 require 'pry'
 
+puts "CREATING METALS\n"
 @doc = Nokogiri::HTML(open("http://finance.yahoo.com/futures?t=metals"))
 @doc.css("#yfitp table tr").each do |tr|
 	price = tr.css('.last_trade span').first.content
@@ -23,9 +24,13 @@ require 'pry'
 		metal_name, month, day = metal.split(' ')
 		date = "#{month} #{day}"
 	end
-	Metal.create(:name => metal_name)
+	puts "#{metal_name} created"
+  Metal.create(:name => metal_name)
 end 
 
-puts "CREATING COINS"
-
+puts "\nCREATING COINS\n"
+coins = Coin.create([
+                    {name:'40% Half', melt_weight:0.1479, metal: Metal.find_by_name('Silver')},
+                    
+                    ])
 #metals = Metal.create([{name: 'Copper'}, {name: 'Gold 100oz'}, {name: 'Gold'}, {name: 'Palladium'}, {name: 'Platinum'}, {name: 'Silver 5000oz'}, {name: 'Silver'}])
