@@ -33,4 +33,6 @@ coins = Coin.create([
                     {name:'40% Half', melt_weight:0.1479, metal: Metal.find_by_name('Silver')},
                     
                     ])
+
+user1 = User.create! :name => 'First User', :email => 'user@test.com', :password => '123456', :password_confirmation => '123456a                   
 #metals = Metal.create([{name: 'Copper'}, {name: 'Gold 100oz'}, {name: 'Gold'}, {name: 'Palladium'}, {name: 'Platinum'}, {name: 'Silver 5000oz'}, {name: 'Silver'}])
