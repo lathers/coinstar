@@ -1,4 +1,4 @@
-<% form_for @coin, :url =>{:action => 'create'} do |f| %>
+<%= form_for @coin, :url => coins_path do |f| %>
   <p>
     <%= f.label :name %><br/>
     <%= f.text_field :name %>
