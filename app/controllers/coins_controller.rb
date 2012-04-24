@@ -1,5 +1,9 @@
 class CoinsController < ApplicationController
 
+  def index
+    @coins = Coin.find(:all)
+    @metals = Metal.find(:all)
+  end
 	def new		
 		@coin = Coin.new
 	end

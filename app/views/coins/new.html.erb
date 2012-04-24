@@ -1,0 +1,14 @@
+<% form_for @coin, :url =>{:action => 'create'} do |f| %>
+  <p>
+    <%= f.label :name %><br/>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :melt_weight %></br>
+    <%= f.text_field :melt_weight %>
+  </p>
+  <p>
+    <%= f.label :metal %><br/>
+  </p>  
+
+<% end %>
