@@ -7,7 +7,7 @@
 
 body
 { font: normal 100% Arial, Helvetica, sans-serif;
-/*  background: #1B1B1B url(../images/pattern.jpg) repeat;*/
+/*  background: #1B1B1B url('assets/pattern.jpg') repeat;*/
 	background: #ffffff;
   color: #000;
 }
@@ -130,7 +130,7 @@ ul#menu li a
   color: #FFF;
   text-decoration: none;
   border-left: 1px solid #FFF;
-  background: transparent url(/assets/images/tab.png);} 
+  background: transparent url(<%= asset_path 'tab.png' %>);} 
 
 #site_content
 { width: 920px;
@@ -227,7 +227,7 @@ ul#menu li a
   height: 30px;
   width: 130px;
   padding: 8px 0 0 30px;
-  background: transparent url(../images/button_small.png) no-repeat;}
+  background: transparent url(<%= asset_path 'button_small.png' %>) no-repeat;}
   
 .button_small a
 { color: #FFF;}
