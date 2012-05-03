@@ -31,7 +31,7 @@ RSpec.configure do |config|
   config.infer_base_class_for_anonymous_controllers = false
 
   if Metal.find(:all).empty?
-    load "#{Rails.root}/db/test_seeds.rb"
+    load "#{Rails.root}/db/test_seed.rb"
   end
 
 end
