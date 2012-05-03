@@ -26,10 +26,10 @@
           </ul>
         </div>
 	    <div id="contact">
-	      <img src="images/libv.png" alt="1883 NC Liberty" />
-	      <img src="images/ase.png" alt="2006 ASE Reverse Proof" />
+              <img src="<%= asset_path 'libv.png' %>" alt="1883 NC Liberty" />
+              <img src="<%= asset_path 'ase.png' %>" alt="2006 ASE Reverse Proof" />
 		  <!--<img src="images/bayb.png" alt="1936 Bay Bridge Commemorative" />-->
-		  <img src="images/morg.png" alt="1879s Morgan" />
+                  <img src="<%= asset_path 'morg.png'%>" alt="1879s Morgan" />
 		  
 	    </div>
 	  </div>
@@ -68,8 +68,8 @@
           </div>
         </div>
        </div>
-      <ul class="slideshow">
-        <li><img width="650" height="300" src="images/logo.jpg" alt="logo" /></li><!--www.pixmac.com/picture/golden+eagle+coins+on+newspaper/000087604202-->
+       <ul class="slideshow">
+         <li><img width="650" height="300" src="<%= asset_path 'logo.jpg' %>" alt="logo" /></li><!--www.pixmac.com/picture/golden+eagle+coins+on+newspaper/000087604202-->
       </ul>   	 
 	  <div id="content">
 	  	<%= yield %>

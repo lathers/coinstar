@@ -130,7 +130,7 @@ ul#menu li a
   color: #FFF;
   text-decoration: none;
   border-left: 1px solid #FFF;
-  background: transparent url(../images/tab.png);} 
+  background: transparent url(/assets/images/tab.png);} 
 
 #site_content
 { width: 920px;

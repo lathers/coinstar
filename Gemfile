@@ -35,7 +35,7 @@ gem 'devise'
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Deploy with Capistrano
 # gem 'capistrano'
@@ -43,6 +43,7 @@ gem 'devise'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 group :development, :test do
+  gem 'unicorn'
   gem 'pry'
   gem 'pry-doc'
   gem 'rspec-rails'
