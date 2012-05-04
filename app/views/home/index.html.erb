@@ -23,5 +23,13 @@
 		    	Rhodium: $1000.00<br />
 		    </p>
 		  </div>
-		  
+                  <div class="coins">
+                    <%= form_for :coin do |f| %>
+                      <%= collection_select :coin, :id, @coins, :id, :name %> <br/>
+                      <p>
+                      <label>Quantity </label>
+                      <input type="text" name ="quantity">
+                      </p> 
+                    <% end %>
+                  </div>    
 		  <%= link_to "New Coin", new_coin_path %>
