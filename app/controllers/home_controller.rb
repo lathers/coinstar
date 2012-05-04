@@ -1,6 +1,7 @@
 class HomeController < ApplicationController
 
-def index
+def index  
+  @coins = Coin.find(:all)
 end
 
 end

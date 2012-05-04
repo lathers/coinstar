@@ -1,5 +1,5 @@
 class Coin < ActiveRecord::Base
-  attr_accessible :name, :melt_weight, :metal, :own
+  attr_accessible :name, :melt_weight, :metal_id, :own
   
   belongs_to :metal
   has_many :owned_coins

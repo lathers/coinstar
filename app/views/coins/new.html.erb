@@ -1,4 +1,11 @@
 <%= form_for @coin, :url => coins_path do |f| %>
+	<% unless @coin.errors.empty? %>
+		<div class="errors">
+		  <% @coin.errors.full_messages.each do |msg| %>
+			<%= msg %><br/>
+		  <% end %>	
+		</div>
+	<% end %>
   <p>
     <%= f.label :name %><br/>
     <%= f.text_field :name %>
@@ -9,6 +16,9 @@
   </p>
   <p>
     <%= f.label :metal %><br/>
+	<%= collection_select :metal, :id, @metals, :id, :name %>
   </p>  
-
+  <p>
+	<%= f.submit 'Save' %>
+  </p>
 <% end %>
